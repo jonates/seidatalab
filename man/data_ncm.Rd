@@ -5,10 +5,10 @@
 \alias{data_ncm}
 \title{dataset - NCM}
 \description{
-Conjunto de dados com alguns NCM para testar algumas funções
+Conjunto de dados com alguns NCM para testar algumas funÃ§Ãµes
 }
 \usage{
-ideb::{data_ncm}
+seidatalab::data_ncm
 }
 \format{
 [,1] ncm_17 \cr
