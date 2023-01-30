@@ -11,7 +11,7 @@ Conjunto de dados com alguns GTIN para testar algumas funções
 seidatalab::data_gtin
 }
 \format{
-[,1] gtin_17
+[,1] gtin
 }
 \author{
 Jonatas Silva do Espirito Santo
