@@ -11,7 +11,7 @@ Conjunto de dados com alguns NCM para testar algumas funções
 seidatalab::data_ncm
 }
 \format{
-[,1] ncm_17
+[,1] ncm
 }
 \author{
 Jonatas Silva do Espirito Santo
