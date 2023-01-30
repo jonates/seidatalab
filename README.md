@@ -28,9 +28,5 @@ Apos a instalacao do pacote `seidatalab` para carregar um conjunto de dados bast
 ``` {.r}
 #carrega a base do ideb do ensino médio do Brasil
 df <- seidatalab::data_ncm
-
-#Plot o gráfico do IDEB do Brasil, por ano e por rede de ensino.
-library(ggplot2)
-ggplot(data = df) +
-  geom_point(aes(x=ano,y=ideb,colour=rede))
+df
 ```
