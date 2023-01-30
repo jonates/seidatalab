@@ -9,7 +9,7 @@ Atualmente disponibiliza 1 conjuntos de dados:
 
 O `data_ncm` um conjunto de dados com alguns ncm, com tamanhos corretos (8 dígitos) e também alguns com quantidade de dígitos errados.
 
-O `data_gtin` um conjunto de dados com alguns ncm, com tamanhos corretos (8 dígitos) e também alguns com quantidade de dígitos errados.
+O `data_gtin` um conjunto de dados com alguns gtin, com tamanhos corretos (em termos de número de dígitos dígitos) e também alguns com quantidade de dígitos errados.
 
 ## Instalacao
 
