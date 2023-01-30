@@ -1,4 +1,5 @@
-﻿Package: seidatalab
+Package: seidatalab
+Type: Package
 Title: Este pacote contém funções úteis para rotina de trabalho do SEIDataLab - Laboratório de dados da SEI.
 Version: 0.0.0.9000
 Authors@R: c(person("Jonatas", "Silva do Espirito Santo", email = "jonatassanto@sei.ba.gov.br", role = c("aut", "cre")),person("Samuel", "Verissimo Portela Mendes", email = "samuelmendes@sei.ba.gov.br", role = "ctb"))
@@ -7,6 +8,6 @@ Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.1
 Imports:
   
