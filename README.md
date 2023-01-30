@@ -11,8 +11,6 @@ O `data_ncm` um conjunto de dados com alguns ncm, com tamanhos corretos (8 dígi
 
 O `data_gtin` um conjunto de dados com alguns ncm, com tamanhos corretos (8 dígitos) e também alguns com quantidade de dígitos errados.
 
-O `ideb_fundamental_finais_brasil` contem como atributo os valores dos indicadores utilizados para o calculo do IDEB das séries finais (6º ao 9º ano) do ensino fundamental para o Brasil, como as taxas de aprovacoes (por serie) e as notas da prova SAEB. Conta tambem com o valor do IDEB e as metas para os anos de 2005, 2007, 2009, 2013, 2015, 2017 e 2019. Tambem estratifica essas informacoes pela rede de ensino.
-
 ## Instalacao
 
 ``` {.r}
