@@ -6,18 +6,26 @@
 #' 
 #' @export
 ver_char_ncm <- function(data) {
-  if (sdf_schema(data)[[1]][2]$type == "StringType") {
-    # print("É character!")
-    data <- data %>% 
-      dplyr::mutate(VALID_NCM = case_when(nchar(trim(ncm)) == 8 ~ 1,
-                                          TRUE ~ 0)) %>% 
-      dplyr::relocate(VALID_NCM, .after = ncm)
-  } else {
-    # print("Não é character!")
-    data <- data %>% 
-      dplyr::mutate(VALID_NCM = case_when(nchar(as.character(as.integer(ncm))) == 8 ~ 1,
-                                          TRUE ~ 0)) %>% 
-      dplyr::relocate(VALID_NCM, .after = ncm)
-  }
+  if (sparklyr::sdf_schema(data)[[1]][2]$type == "StringType") {
+    data <- dplyr::mutate(
+                          data,
+                          VALID_NCM = dplyr::case_when(
+                                                       nchar(
+                                                             glue::trim(ncm)
+                                                             ) == 8 ~ 1,
+                                                       TRUE ~ 0
+                                                       )
+                          )
+    } else {
+      data <- dplyr::mutate(
+                            data,
+                            VALID_NCM = dplyr::case_when(
+                                                         nchar(
+                                                               as.character(as.integer(ncm))
+                                                               ) == 8 ~ 1,
+                                                         TRUE ~ 0
+                                                         )
+                            )
+      }
   return(data)
-}
+  }
