@@ -5,10 +5,10 @@
 \alias{data_gtin}
 \title{dataset - GTIN}
 \description{
-Conjunto de dados com alguns GTIN para testar algumas funções
+Conjunto de dados com alguns GTIN para testar algumas funÃ§Ãµes
 }
 \usage{
-ideb::{data_gtin}
+seidatalab::data_gtin
 }
 \format{
 [,1] gtin \cr
