@@ -11,7 +11,7 @@ ver_char_ncm <- function(data, var) {
       data,
       VALID_NCM = dplyr::case_when(
          nchar(glue::trim(data$var)) == 8 ~ 1,
-         TRUE ~ 0
+         TRUE ~ as.character(data$var)
       )
     )
   } else {
@@ -19,7 +19,7 @@ ver_char_ncm <- function(data, var) {
         data,
         VALID_NCM = dplyr::case_when(
           nchar(as.character(as.integer(data$var))) == 8 ~ 1,
-          TRUE ~ 0
+          TRUE ~ as.character(data$var)
         )
       )
     }
