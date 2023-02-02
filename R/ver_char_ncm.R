@@ -6,7 +6,7 @@
 #' 
 #' @export
 ver_char_ncm <- function (data, var) {
-  data <- as.data.frame(dplyr::distinct(data[var]))
+  suppressWarnings(data <- as.data.frame(distinct(data[var])))
   data <- mutate(data,
                  VALID_NCM = dplyr::case_when(nchar(trimws(data[,1])) == 8 ~ 1,
                                               TRUE ~ 0))
