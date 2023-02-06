@@ -11,3 +11,10 @@
 #'
 #' @source data_gtin
 'data_gtin'
+#'
+#' ncm_valido
+#'
+#' @format ncm_valido
+#'
+#' @source ncm_valido
+'ncm_valido'
