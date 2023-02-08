@@ -10,12 +10,12 @@ ver_char_ncm <- function (data, var, rep_valida) {
   if (sparklyr::sdf_schema(data[var])[[1]][2]$type == "StringType") {
     data <- dplyr::mutate(data, 
                           VALID_NCM = dplyr::case_when(nchar(trimws({{var_name}})) == 8 &
-                                                         trimws({{var_name}}) %in% !!rep_valida[,1] ~ 1,
+                                                         trimws({{var_name}}) %in% !!rep_valida ~ 1,
                                                        TRUE ~ 0))
   } else {
     data <- dplyr::mutate(data, 
                           VALID_NCM = dplyr::case_when(nchar(as.character(as.integer({{var_name}}))) == 8 &
-                                                         as.character(as.integer({{var_name}})) %in% !!rep_valida[,1] ~ 1,
+                                                         as.character(as.integer({{var_name}})) %in% !!rep_valida ~ 1,
                                                        TRUE ~ 0))
   }
   
