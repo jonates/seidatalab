@@ -2,7 +2,11 @@
 #' 
 #' Recebe um vetor com o código da Nomenclatura Comum do Mercosul e retorna os valores únicos adicionando uma coluna binária referente a validação, onde 0 = "Inválido" e 1 = "Válido".
 #' 
-#' @param data vetor de códigos ncm.
+#' @param data vetor Spark de códigos ncm.
+#' 
+#' @param var Nome da variável de interesse.
+#' 
+#' @param rep_valida Vetor com os códigos NCM válidos.
 #' 
 #' @export
 ver_char_ncm <- function (data, var, rep_valida) {
