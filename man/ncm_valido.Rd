@@ -14,7 +14,7 @@ seidatalab::ncm_valido
 [,1] ncm
 }
 \author{
-Jonatas Silva do Espirito Santo
+Samuel Veríssimo Portela Mendes
 }
 \source{
 ncm_valido
