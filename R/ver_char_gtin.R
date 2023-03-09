@@ -7,8 +7,7 @@
 #' @param var nome da variável que corresponde ao gtin
 #' 
 #' @export
-ver_char_gtin <- function(data, var)
-{
+ver_char_gtin <- function(data, var){
   var_name <- base::as.name(base::substitute(var))
   if (sparklyr::sdf_schema(data[var])[[1]][2]$type == "StringType") {
     data <- dplyr::mutate(.data = data,
