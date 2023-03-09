@@ -37,8 +37,6 @@ ver_char_gtin <- function(data, var)
                             TRUE ~ 0
                           ))
   }
-  # data <- dplyr::select(.data = data,
-  #                       -c(grepl_gtin))
   data <- dplyr::relocate(.data = dplyr::select(.data = data,
                                                 -c(grepl_gtin)),
                           VALID_GTIN, .after = gtin)
